@@ -14,6 +14,8 @@ var articulos = [
 //Método FILTER para seleccionar ciertas cosas con 
 // validaciones, para lo cual se requiere generar 
 // un nuevo array
+// Definición: Crea un nuevo array con los elementos del array que se pasó como
+//parametro y que cumplan con la condición definida
 var articulosFiltrados = articulos.filter(function(articulo){
     return articulo.costo <= 500 //regresa los articulos que sean menor o igual a 500
 });
@@ -24,7 +26,8 @@ var articulosFiltrados = articulos.filter(function(articulo){
 
 //-------------------------------------------------------------------------------
 
-//El método de MAP nos ayudará a mapear ciertos articulos
+//El método de MAP crea un nuevo array con los resultados de la llamada 
+//a la función indicada aplicados a cada uno de sus elementos.
 
 var nombreArticulos = articulos.map(function(articulo){
     return articulo.nombre

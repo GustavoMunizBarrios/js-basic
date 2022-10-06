@@ -10,7 +10,8 @@ var articulos = [
     { nombre: "Teclado", costo:500},
     { nombre: "Audifonos", costo:1700}
 ];
-
+//.find Retorna el primer elemento de un array que cumple con una condición 
+//definida en un nuevo array
 var encuentraArticulo = articulos.find(function(articulo){
     return articulo.nombre === "Laptop"
 });
@@ -20,6 +21,7 @@ var encuentraArticulo = articulos.find(function(articulo){
 
 //El método forEach no va a generar un nuevo array simplemente hará 
 //el filtrado sin modificarlo 
+//Ejecuta la función indicada una vez por cada elemento del array
 
 articulos.forEach(function(articulo){ //se manda llamar el array articulos
     console.log(articulo.nombre); //imprime solo el nombre de los articulos del array
